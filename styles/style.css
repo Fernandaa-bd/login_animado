@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+:root{
+    --bgRight: #fff;
+    --bgDark: #004453;
+    --bgShadow: #12d4ff2f;
+    --lightBlue: #00D1FF;
+    --blueGrayDark: #517B85;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+section.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 1px 1px 40px 5px #0000001e;
+}
+
+section.login h1{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+section.login h1 span{
+    color: var(--lightBlue);
+    font-weight: 800;
+}
+
+section.login input{
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+section.login p.forget{
+    margin-bottom: 10px;
+}
+
+section.login p.forget a{
+    color: var(--lightBlue);
+    font-size: 12px;
+    text-decoration: none;
+}
+
+section.login p.forget a:hover{
+    text-decoration: underline;
+}
+
+section.login button.enter{
+    background-color: var(--lightBlue);
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 15px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 15px;
+    transition: .5s;
+}
+
+section.login button.enter:hover{
+    background: transparent;
+    cursor: pointer;
+    color: var(--lightBlue);
+    border: 1px solid var(--lightBlue);
+    box-shadow: inset 1px 1px 25px #00bdff41;
+}
+
+section.login .icons{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+section.login .icons i{
+    font-size: 25px;
+    color: var(--lightBlue);
+    cursor: pointer;
+}
+
+section.login p.last a{
+    color: var(--lightBlue);
+    text-decoration: none;
+}
+
+section.login p.last a:hover{
+    text-decoration: underline;
+}
+
+section.login p.p-theme{
+    margin: 10px 0;
+}
+
+section.login .btn-theme{
+    background-color: var(--lightBlue);
+    height: 20px;
+    width: 40px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+section.login .btn-theme .toogle{
+    position: relative;
+    background-color: #f1f1f1;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    transform: scale(.9);
+    left: 0;
+    transition: .5s;
+}
+
+section.login .btn-theme.dark{
+    background-color: var(--lightBlue);
+}
+
+section.login .btn-theme.dark .toogle{
+    background-color: var(--bgDark);
+    left: 20px;
+}
+
+
+body.dark{
+    background-color: var(--bgDark);
+}
+
+body.dark p{
+    color: var(--lightBlue);
+    transition: .5s;
+}
+
+body.dark h1{
+    color: #fff;
+    transition: .5s;
+}
+
+section.login.dark{
+    background-color: var(--bgDark);
+    box-shadow: 1px 1px 40px 5px var(--bgShadow);
+}
+
+body.dark input{
+    background-color: var(--blueGrayDark);
+    transition: .5s;
+}
+
+body.dark input::placeholder{
+    color: #fff;
+}
