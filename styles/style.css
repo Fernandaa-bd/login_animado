@@ -165,6 +165,7 @@ section.login.dark{
 body.dark input{
     background-color: var(--blueGrayDark);
     transition: .5s;
+    color: #fff;
 }
 
 body.dark input::placeholder{
